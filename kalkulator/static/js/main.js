@@ -89,7 +89,6 @@ function calculate_contract_of_employment(a) {
 
     var server_data = {
         "grossSalary": f.querySelector("#gross_salary").value,
-        "ppk": f.querySelector("#ppk").checked,
         "under26": f.querySelector("#under_26").checked
     };
 
