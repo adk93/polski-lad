@@ -1,0 +1,345 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+<section id="info">
+    <div class="container">
+        <div class="section-header">
+            <h3>Jak korzystać z kalkulatora polskiego ładu?</h3>
+        </div>
+        <div class="info-list">
+            <div class="info-step">
+                <div class="step-container">
+                    <span class="step">1</span>
+                </div>
+                <div class="step-description">
+                    Wybierz formę współpracy oraz sposób rozliczenia podatku dochodowego kilkając w odpowiedni kafelek
+                </div>
+            </div>
+
+            <div class="info-step">
+                <div class="step-description">
+                    Uzupełnij podstawowe dane na temat Twojej aktualnej formy współpracy
+                </div>
+                <div class="step-container">
+                    <span class="step">2</span>
+                </div>
+            </div>
+
+            <div class="info-step">
+                <div class="step-container">
+                    <span class="step">3</span>
+                </div>
+                <div class="step-description">
+                    Kliknij przycisk <strong>Przelicz</strong> i zobacz jak będą kształtować się twoje obciążenia podatkowe
+                    w nowym roku.
+                </div>
+            </div>
+
+            <div class="info-step">
+                <div class="step-container">
+                    <span class="step">4</span>
+                </div>
+                <div class="step-description">
+                    Kalkulator może pokazywać tylko przybliżone obliczenia. W rzeczywistości Twoje obciążenia podatkowe
+                    mogą się różnić. Kalkulator pokaże za to kierunek i siłę zmian Twojego wynagrodzenia netto w nowym
+                    roku.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="calculator">
+    <div id="contract-types-list" class="container">
+        <div class="section-header">
+            <h3>Kalkulator polskiego ładu</h3>
+        </div>
+    <ul class="nav nav-pills nav-justified mb-3" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link"
+               id="employment-tab"
+               data-bs-target="#employment"
+               data-bs-toggle="tab"
+               role="tab"
+               aria-controls="employment"
+               aria-selected="true">Umowa o pracę</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link"
+               id="b2b-scale-tab"
+               data-bs-target="#b2b-scale"
+               data-bs-toggle="tab"
+               role="tab"
+               aria-controls="b2b-scale"
+               aria-selected="false">B2B - skala podatkowa</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link"
+               id="b2b-line-tab"
+               data-bs-target="#b2b-line"
+               data-bs-toggle="tab"
+               role="tab"
+               aria-controls="b2b-line"
+               aria-selected="false">B2B - podatek liniowy</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link"
+               id="b2b-revenue-tab"
+               data-bs-target="#b2b-revenue"
+               data-bs-toggle="tab"
+               role="tab"
+               aria-controls="b2b-revenue"
+               aria-selected="false">B2B - ryczałt od przychodów</button>
+        </li>
+    </ul>
+
+
+    <div class="tab-content">
+        <div id="employment" class="tab-pane fade show active form-section"
+             role="tabpanel" aria-labelledby="employment-tab">
+
+            <div class="form">
+                {{ employment_form.hidden_tag() }}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Umowa o pracę - w 2021 i 2022 roku</legend>
+                    <div class="form-group mb-3">
+                        {{ employment_form.gross_salary.label(class="form-control-label") }}
+                        {{ employment_form.gross_salary(class="form-control form-control-lg") }}
+                    </div>
+                    <div class="form-check mb-3">
+                        {{ employment_form.under_26(class="form-check-input") }}
+                        {{ employment_form.under_26.label(class="form-check-label") }}
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    {{ employment_form.submit(class="btn btn-green", onclick="calculate_contract_of_employment(this)") }}
+                </div>
+            </div>
+        </div>
+
+        <div id="b2b-scale" class="tab-pane fade form-section"
+             role="tabpanel" aria-labelledby="b2b-scale-tab">
+
+            <div class="form">
+                {{ scale_form.hidden_tag() }}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Współpraca B2B na skali podatkowej - w 2021 i 2022 roku</legend>
+                    <div class="form-group mb-3">
+                        {{ scale_form.gross_salary.label(class="form-control-label") }}
+
+                        {{ scale_form.gross_salary(class="form-control form-control-lg") }}
+
+                    </div>
+                    <div class="form-group mb-3">
+                        {{ scale_form.costs.label(class="form-control-label") }}
+
+                        {{ scale_form.costs(class="form-control form-control-lg") }}
+
+                    </div>
+                    <div class="form-group mb-3">
+
+                        {{ scale_form.zus(class="form-check-input") }}
+
+                        {{ scale_form.zus.label(class="form-check-label") }}
+                    </div>
+                </fieldset>
+                <div class="form-group mb-3">
+                    {{ scale_form.submit(class="btn btn-green", onclick="calculate_b2b_scale(this)") }}
+                </div>
+            </div>
+        </div>
+
+        <div id="b2b-line" class="tab-pane fade form-section"
+             role="tabpanel" aria-labelledby="b2b-line-tab">
+
+            <div class="form">
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Współpraca B2B na stawce liniowej - w 2021 i 2022 roku</legend>
+                    <div class="form-group mb-3">
+                        {{ flat_form.gross_salary.label(class="form-control-label") }}
+
+                        {{ flat_form.gross_salary(class="form-control form-control-lg") }}
+
+                    </div>
+                    <div class="form-group mb-3">
+                        {{ flat_form.costs.label(class="form-control-label") }}
+
+                        {{ flat_form.costs(class="form-control form-control-lg") }}
+
+                    </div>
+                    <div class="form-check mb-3">
+
+                        {{ flat_form.zus(class="form-check-input") }}
+
+                        {{ flat_form.zus.label(class="form-check-label") }}
+                    </div>
+                    <div class="form-check mb-3">
+
+                        {{ flat_form.ipbox(class="form-check-input") }}
+
+                        {{ flat_form.ipbox.label(class="form-check-label") }}
+                    </div>
+                </fieldset>
+                <div class="form-group mb-3">
+                    {{ flat_form.submit(class="btn btn-green", onclick="calculate_b2b_line(this)") }}
+                </div>
+            </div>
+        </div>
+
+        <div id="b2b-revenue" class="tab-pane fade form-section"
+             role="tabpanel" aria-labelledby="b2b-revenue-tab">
+
+            <div class="form">
+                {{ revenue_form.hidden_tag() }}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Współpraca B2B na ryczałcie od przychodów - w 2021 i 2022 roku</legend>
+                    <div class="form-group mb-3">
+                        {{ revenue_form.gross_salary.label(class="form-control-label") }}
+
+                        {{ revenue_form.gross_salary(class="form-control form-control-lg") }}
+                    </div>
+                    <div class="form-group mb-3">
+                        {{ revenue_form.costs.label(class="form-control-label") }}
+
+                        {{ revenue_form.costs(class="form-control form-control-lg") }}
+                    </div>
+                    <div class="form-group mb-3">
+                        {{ revenue_form.tax_rate.label(class="form-control-label") }} <a target="_blank" href="https://poradnikprzedsiebiorcy.pl/-ryczalt-od-przychodow-ewidencjonowanych-stawki" ><i class="far fa-question-circle"></i></a>
+
+                        {{ revenue_form.tax_rate(class="form-control form-control-lg") }}
+
+                    </div>
+                    <div class="mb-3 form-check">
+
+                        {{ revenue_form.zus(class="form-check-input") }}
+
+                        {{ revenue_form.zus.label(class="form-check-label") }}
+                    </div>
+                </fieldset>
+                <div class="form-group mb-3">
+                    {{ revenue_form.submit(class="btn btn-green", onclick="calculate_b2b_revenue(this)") }}
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="calculator-results container" hidden>
+        <h5>Aktualnie</h5>
+        <div id="table-2021" class="summary-table-container">
+
+        </div>
+        <h5>W Polskim ładzie</h5>
+        <div id="table-2022" class="summary-table-container">
+
+        </div>
+        <div class="summary">
+            <div id="summary-header">
+                <h5>Podsumowanie</h5>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="cardbox">
+                        <div>
+                            <span id="summary-2021"></span> PLN<br>
+                            <p>tyle zarobisz na rękę w 2021 roku</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardbox">
+                        <div>
+                            <span id="summary-2022"></span> PLN<br>
+                            <p>tyle zarobisz na rękę w 2022 roku</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardbox">
+                        <div>
+                            Twoje wynagrodzenie będzie o <br><span id="summary-compare"></span> <span id="greaterlower"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="summary-appendix">
+            <div>
+                <h5>Wyjaśnienia do obliczeń</h5>
+            </div>
+            <div>
+                <ul>
+                    <li>Poprzez wynagrodzenie na umowie rozumiemy wynagrodzenie brutto na umowie o pracę
+                    oraz przychody ze sprzedaży netto na umowach B2B</li>
+                    <li>Koszty uzyskania przychodu na umowie o pracę są odpowiednie dla pracy w tej samej
+                    miejscowości co miejsce zamieszkania</li>
+                    <li>W przypadku umów B2B koszty rozumiane są jako koszty uzyskania przychodu</li>
+                    <li>Koszty nie mają wpływu na wysokość podatku przy rozliczaniu podatku na podstawie
+                    ryczałtu od przychodów ewidencjonowanych</li>
+                    <li>Kwota wolna od podatku jest odliczana w całości w jednym okresie</li>
+                    <li>Obliczenia podatku dochodowego uwzględniają ulgę dla klasy średniej przy umowie o pracę
+                        oraz przy skali podatkowej na umowie B2B</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<section id="about">
+    <div class="container">
+
+        <div class="section-header">
+            <h3>Czym jest projekt polskiego ładu?</h3>
+        </div>
+        <div>
+            <p>
+                Polski Ład to plan odbudowy polskiej gospodarki po pandemii COVID-19. Ma zmniejszyć nierówności społeczne i stworzyć lepsze warunki do życia dla wszystkich obywateli.</p>
+
+            <p>
+                Polski Ład
+                Plan opiera się na 5 fundamentach:
+            </p>
+
+            <p>
+                NIŻSZE PODATKI
+                korzystne zmiany podatkowe dla 18 mln Polaków, w tym podniesienie kwoty wolnej do 30 tys. zł dla każdego.
+            </p>
+            <p>
+                WIĘCEJ NA ZDROWIE
+                rozwiązania przewidujące znaczące usprawnienie działania służby zdrowia.
+            </p>
+            <p>
+                WŁASNE CZTERY KĄTY
+                propozycje wychodzące naprzeciw trudnościom mieszkaniowym Polaków.
+            </p>
+            <p>
+                WYŻSZA EMERYTURA
+                brak podatku PIT dla emerytów i rencistów, którzy pobierają świadczenie w wysokości do 2,5 tys. zł brutto.
+            </p>
+            <p>
+                500 TYS. NOWYCH MIEJSC PRACY
+                stworzenie dodatkowych miejsc pracy dzięki inwestycjom, m.in. w infrastrukturę, transport, usługi publiczne czy cyfryzację.
+            </p>
+
+            <p>
+                Na realizację wszystkich projektów przewidujemy przeznaczyć ponad 650 mld zł do 2030 r.*, w tym rocznie ponad 72 mld zł.**
+
+                * Tyle wyniesie maksymalny koszt projektów do 2030 r. (przy uwzględnieniu wzrostu inwestycji prywatnych).
+
+                ** Tyle wyniesie średni koszt projektów (przy uwzględnieniu wzrostu inwestycji prywatnych).
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}
+
+

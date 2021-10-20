@@ -1,0 +1,169 @@
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+section {
+    padding: 50px 0px;
+}
+
+footer {
+    color: white;
+}
+
+.form-section{
+    display: none;
+    width: 50%;
+    margin: auto;
+}
+
+#calculator {
+    background-color: #f8f9fa;
+    min-height: 200px;
+
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+button.nav-link.active {
+    background-color: #333366 !important;
+    color: white !important;
+
+}
+
+button.nav-link {
+    color: #333366 !important;
+    font-weight: bold;
+}
+
+.btn-green {
+    background-color: #326647;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.tab-content {
+    margin: 80px 0px;
+}
+
+.step-container {
+    width: 50px;
+    height: 50px;
+    background-color: #333366;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    }
+
+.info-list {
+    margin: 30px 0px;
+}
+
+.info-step {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0px;
+}
+
+.info-step:nth-child(2n) {
+    justify-content: flex-end;
+}
+
+.step-description {
+    width: 50%;
+}
+
+
+.calculator-results {
+    transform: scaleY(0);
+    transition: transform 400ms ease 0ms;
+}
+
+.calculator-results.show {
+    transform: scaleY(1);
+    transition: transform 400ms ease 0ms;
+}
+
+
+.summary-table {
+    text-align: center;
+    border: none;
+    background-color: white;
+}
+
+.summary-table-container {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.summary-table thead {
+    background-color: #333366;
+    color: white;
+}
+
+.cardbox {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: white;
+    color: #333366;
+    font-size: 1.10rem;
+    margin: 25px 25px;
+    padding: 25px 25px;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.cardbox span {
+    font-weight: bold;
+}
+
+.cardbox div {
+    text-align: center;
+}
+
+.invalid {
+    border: 2px dashed red;
+    background-color: pink;
+}
+
+#summary-appendix {
+    margin-top: 50px;
+}
+
+#summary-appendix ul {
+    list-style: none;
+    display: block;
+}
+
+#summary-appendix ul li {
+    margin: 10px 0px;
+}
+
+
+#summary-appendix ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #333366; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css')}}">
+    <script src="https://kit.fontawesome.com/488013ff2b.js" crossorigin="anonymous"></script>
+    <title>Ile stracę na polskim ładzie</title>
+</head>
+<body class="d-flex flex-column h-100">
+<div class="container py-3">
+    <div>
+
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <span class="fs-4">Ile stracę na polskim ładzie?</span>
+          </a>
+
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#calculator">Kalkulator</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#about">O polskim ładzie</a>
+          </nav>
+        </div>
+
+    </div>
+    <main>
+    {% block body %}
+
+    {% endblock %}
+    </main>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</div>
+<footer class="bg-dark text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a href="#">AK</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+</html>
