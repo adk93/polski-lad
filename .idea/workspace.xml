@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b27900e0-968e-4122-8915-114ffad12127" name="Default" comment="" />
+    <list default="true" id="b27900e0-968e-4122-8915-114ffad12127" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalkulator/main/forms.py" afterPath="$PROJECT_DIR$/kalkulator/main/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalkulator/static/js/main.js" afterPath="$PROJECT_DIR$/kalkulator/static/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalkulator/templates/base.html" afterPath="$PROJECT_DIR$/kalkulator/templates/base.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,18 +23,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.45850998">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kalkulator/main/utils.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1054">
-                  <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="85" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#27#56#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/run.py">
               <provider selected="true" editor-type-id="text-editor">
@@ -42,7 +36,7 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kalkulator/templates/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="411">
+                <state relative-caret-position="4811">
                   <caret line="283" column="69" lean-forward="false" selection-start-line="283" selection-start-column="69" selection-end-line="283" selection-end-column="69" />
                   <folding />
                 </state>
@@ -59,6 +53,38 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/kalkulator/static/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="224">
+                  <caret line="67" column="100" lean-forward="false" selection-start-line="67" selection-start-column="100" selection-end-line="67" selection-end-column="100" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="routes.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kalkulator/main/routes.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+                  <folding>
+                    <element signature="e#27#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kalkulator/templates/base.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/requirements.txt">
               <provider selected="true" editor-type-id="text-editor">
@@ -69,7 +95,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
@@ -79,30 +105,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kalkulator/static/js/main.js">
+          <file leaf-file-name="runtime.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/runtime.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2057">
-                  <caret line="121" column="40" lean-forward="false" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="calcB2B.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kalkulator/main/calcB2B.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="243" column="27" lean-forward="false" selection-start-line="243" selection-start-column="27" selection-end-line="243" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#27#40#0" expanded="true" />
-                    <element signature="e#2638#4895#0" expanded="false" />
-                    <element signature="e#7561#8717#0" expanded="false" />
-                    <element signature="e#10244#11372#0" expanded="false" />
-                    <element signature="e#11409#13165#0" expanded="false" />
-                    <element signature="e#12504#12830#0" expanded="false" />
-                    <element signature="e#12919#13000#0" expanded="false" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -110,21 +118,9 @@
           <file leaf-file-name="calcEmployment.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kalkulator/main/calcEmployment.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
+                <state relative-caret-position="1853">
                   <caret line="117" column="70" lean-forward="false" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="routes.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kalkulator/main/routes.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="114">
-                  <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-                  <folding>
-                    <element signature="e#27#38#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -136,7 +132,7 @@
           <file leaf-file-name="test_contract_of_employment.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kalkulator/tests/test_contract_of_employment.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="301">
+                <state relative-caret-position="731">
                   <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
                   <folding>
                     <element signature="e#51#64#0" expanded="true" />
@@ -148,7 +144,7 @@
           <file leaf-file-name="test_b2b.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kalkulator/tests/test_b2b.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1508">
+                <state relative-caret-position="1802">
                   <caret line="111" column="20" lean-forward="false" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
                   <folding>
                     <element signature="e#51#64#0" expanded="true" />
@@ -157,21 +153,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kalkulator/static/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
+                <state relative-caret-position="360">
                   <caret line="157" column="21" lean-forward="false" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/kalkulator/main/forms.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+                <state relative-caret-position="203">
+                  <caret line="13" column="68" lean-forward="true" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
                   <folding>
                     <element signature="e#50#81#0" expanded="true" />
                   </folding>
@@ -197,6 +193,9 @@
       <find>form-check</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -209,21 +208,23 @@
         <option value="$PROJECT_DIR$/kalkulator/main/errors.py" />
         <option value="$PROJECT_DIR$/kalkulator/main/calc-B2B.py" />
         <option value="$PROJECT_DIR$/kalkulator/main/calc-Employment.py" />
-        <option value="$PROJECT_DIR$/kalkulator/templates/base.html" />
         <option value="$PROJECT_DIR$/kalkulator/main/routes.py" />
-        <option value="$PROJECT_DIR$/kalkulator/static/js/main.js" />
         <option value="$PROJECT_DIR$/kalkulator/main/utils.py" />
         <option value="$PROJECT_DIR$/kalkulator/tests/__init__.py" />
         <option value="$PROJECT_DIR$/kalkulator/tests/test_calculator.py" />
         <option value="$PROJECT_DIR$/kalkulator/tests/test_contract_of_employment.py" />
         <option value="$PROJECT_DIR$/kalkulator/tests/test_b2b.py" />
         <option value="$PROJECT_DIR$/kalkulator/main/calcEmployment.py" />
-        <option value="$PROJECT_DIR$/kalkulator/main/forms.py" />
         <option value="$PROJECT_DIR$/kalkulator/main/calcB2B.py" />
         <option value="$PROJECT_DIR$/kalkulator/static/css/main.css" />
         <option value="$PROJECT_DIR$/kalkulator/templates/index.html" />
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/ttt.py" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/kalkulator/templates/base.html" />
+        <option value="$PROJECT_DIR$/kalkulator/main/forms.py" />
+        <option value="$PROJECT_DIR$/kalkulator/static/js/main.js" />
       </list>
     </option>
   </component>
@@ -248,7 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,8 +275,85 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KalkulatorWynagrodzen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KalkulatorWynagrodzen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kalkulator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KalkulatorWynagrodzen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KalkulatorWynagrodzen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kalkulator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KalkulatorWynagrodzen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KalkulatorWynagrodzen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kalkulator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KalkulatorWynagrodzen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KalkulatorWynagrodzen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kalkulator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -293,31 +370,7 @@
       <recent name="D:\Enviroments\KalkulatorWynagrodzeń\kalkulator\static\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
-    <configuration default="false" name="py.test in TestB2BFlat2021" type="tests" factoryName="py.test" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="KalkulatorWynagrodzeń" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/kalkulator/tests/test_b2b.py" />
-      <option name="keywords" value="TestB2BFlat2021" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="true" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.ttt">
     <configuration default="false" name="py.test in TestB2BFlat2022" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -403,6 +456,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="KalkulatorWynagrodzeń" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ttt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="KalkulatorWynagrodzeń" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ttt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -542,19 +612,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BFlat2021" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BFlat2022" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BRevenueTax2021" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BRevenueTax2022" />
-      <item index="4" class="java.lang.String" itemvalue="Python.run" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BFlat2022" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BRevenueTax2021" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BRevenueTax2022" />
+      <item index="3" class="java.lang.String" itemvalue="Python.run" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ttt" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.run" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BRevenueTax2022" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BRevenueTax2021" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BFlat2022" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BFlat2021" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ttt" />
+        <item index="1" class="java.lang.String" itemvalue="Python.run" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BRevenueTax2022" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BRevenueTax2021" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestB2BFlat2022" />
       </list>
     </recent_temporary>
   </component>
@@ -608,25 +678,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14010416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14010416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38266385" sideWeight="0.20833333" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25581396" sideWeight="0.20937042" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38266385" sideWeight="0.7916667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5709779" sideWeight="0.79062957" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -639,21 +709,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kalkulator/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kalkulator/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -709,7 +764,7 @@
         <state relative-caret-position="1564">
           <caret line="100" column="116" lean-forward="false" selection-start-line="100" selection-start-column="116" selection-end-line="100" selection-end-column="116" />
           <folding>
-            <element signature="e#27#56#0" expanded="true" />
+            <element signature="e#27#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -784,7 +839,7 @@
         <state relative-caret-position="1411">
           <caret line="91" column="116" lean-forward="false" selection-start-line="91" selection-start-column="116" selection-end-line="91" selection-end-column="116" />
           <folding>
-            <element signature="e#27#56#0" expanded="true" />
+            <element signature="e#27#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -868,14 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kalkulator/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -893,21 +940,6 @@
     <entry file="file://$PROJECT_DIR$/kalkulator/main/test.py" />
     <entry file="file://$PROJECT_DIR$/dada.py" />
     <entry file="file://$PROJECT_DIR$/kalkulator/main/errors.py" />
-    <entry file="file://$PROJECT_DIR$/kalkulator/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="87" lean-forward="false" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kalkulator/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="121" column="40" lean-forward="false" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kalkulator/tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -928,35 +960,7 @@
         <state relative-caret-position="1054">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="85" selection-end-column="29" />
           <folding>
-            <element signature="e#27#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kalkulator/main/routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding>
-            <element signature="e#27#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kalkulator/main/calcEmployment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="117" column="70" lean-forward="false" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kalkulator/main/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="e#50#81#0" expanded="true" />
+            <element signature="e#27#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -965,21 +969,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="243" column="27" lean-forward="false" selection-start-line="243" selection-start-column="27" selection-end-line="243" selection-end-column="27" />
-          <folding>
-            <element signature="e#27#40#0" expanded="true" />
-            <element signature="e#2638#4895#0" expanded="false" />
-            <element signature="e#7561#8717#0" expanded="false" />
-            <element signature="e#10244#11372#0" expanded="false" />
-            <element signature="e#11409#13165#0" expanded="false" />
-            <element signature="e#12504#12830#0" expanded="false" />
-            <element signature="e#12919#13000#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kalkulator/tests/test_contract_of_employment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="731">
           <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
           <folding>
             <element signature="e#51#64#0" expanded="true" />
@@ -989,7 +984,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kalkulator/tests/test_b2b.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1508">
+        <state relative-caret-position="1802">
           <caret line="111" column="20" lean-forward="false" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
           <folding>
             <element signature="e#51#64#0" expanded="true" />
@@ -999,7 +994,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kalkulator/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="360">
           <caret line="157" column="21" lean-forward="false" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
           <folding />
         </state>
@@ -1007,16 +1002,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kalkulator/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
+        <state relative-caret-position="4811">
           <caret line="283" column="69" lean-forward="false" selection-start-line="283" selection-start-column="69" selection-end-line="283" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1033,6 +1020,75 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttt.py" />
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kalkulator/main/calcEmployment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="117" column="70" lean-forward="false" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kalkulator/main/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+          <folding>
+            <element signature="e#27#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kalkulator/main/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="13" column="68" lean-forward="true" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+          <folding>
+            <element signature="e#50#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kalkulator/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kalkulator/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="67" column="100" lean-forward="false" selection-start-line="67" selection-start-column="100" selection-end-line="67" selection-end-column="100" />
           <folding />
         </state>
       </provider>

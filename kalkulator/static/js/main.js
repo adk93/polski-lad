@@ -65,7 +65,7 @@ function printResults(endpoint, server_data){
 
             idSummary2021.innerHTML = summary2021
             idSummary2022.innerHTML = summary2022
-            idSummaryCompare.innerHTML = Math.floor((summary2022 / summary2021 - 1) * 100) + "%";
+            idSummaryCompare.innerHTML = Math.abs(Math.floor((summary2022 / summary2021 - 1) * 100)) + "%";
 
             document.getElementById("greaterlower").innerHTML = (summary2022 > summary2021) ? "większe" : "mniejsze";
 
@@ -89,7 +89,6 @@ function calculate_contract_of_employment(a) {
 
     var server_data = {
         "grossSalary": f.querySelector("#gross_salary").value,
-        "ppk": f.querySelector("#ppk").checked,
         "under26": f.querySelector("#under_26").checked
     };
 

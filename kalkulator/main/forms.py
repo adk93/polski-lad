@@ -8,14 +8,15 @@ from wtforms.validators import DataRequired, ValidationError, NumberRange
 # Local application imports
 
 class SalaryForm(FlaskForm):
-    gross_salary = FloatField("Miesięczne wynagrodzenie brutto", validators=[NumberRange(min=0), DataRequired()])
     submit = SubmitField("Przelicz!")
 
 class B2BForm(FlaskForm):
+    gross_salary = FloatField("Miesięczna sprzedaż netto na fakturze", validators=[NumberRange(min=0), DataRequired()])
     costs = FloatField("Średnie miesięczny koszty uzyskania przychodów", validators=[NumberRange(min=0)], default=0)
     zus = BooleanField("Mały ZUS")
 
 class ContractOfEmploymentForm(SalaryForm):
+    gross_salary = FloatField("Miesięczne wynagrodzenie brutto", validators=[NumberRange(min=0), DataRequired()])
     under_26 = BooleanField("ulga dla osób do 26. roku życia")
 
 class ContractB2BFlatTax(SalaryForm, B2BForm):
