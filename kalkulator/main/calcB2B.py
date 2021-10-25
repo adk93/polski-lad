@@ -306,6 +306,8 @@ class B2BRevenueTax2022(B2B):
         super().__init__(kwargs.get('grossSalary', 3000), kwargs.get('zus', False))
         self.tax_rate = float(kwargs.get('taxRate', 0.15))
         self.monthly_costs = float(kwargs.get('costs', 0))
+        self.is_it = kwargs.get("is_it", False)
+        self.is_medic = kwargs.get("is_medic", False)
 
     DATA: dict = {
         "EMPLOYEE_ZUS": 945.67,
@@ -314,6 +316,8 @@ class B2BRevenueTax2022(B2B):
                                    NFZ_TABLE(min_salary=60000, max_salary=300000, health_insurance=509.27),
                                    NFZ_TABLE(min_salary=300000, max_salary=np.inf, health_insurance=916.68)],
         "HEALTH_INSURANCE_DEDUCTIBLE": 0,
+        "TAX_RATE_CHANGE" : {"IT": 0.12,
+                             "MEDIC": 0.14}
     }
 
     @Rounder()
@@ -336,4 +340,11 @@ class B2BRevenueTax2022(B2B):
 
     @Rounder(decimals=2)
     def calculate_income_tax(self) -> np.ndarray:
-        return self.calculate_income() * self.tax_rate - self.calculate_nfz_deductible()
+        if self.is_it:
+            tax_rate_2022 = self.DATA['TAX_RATE_CHANGE'].get("IT", 0.15)
+        elif self.is_medic:
+            tax_rate_2022 = self.DATA['TAX_RATE_CHANGE'].get("MEDIC", 0.17)
+        else:
+            tax_rate_2022 = self.tax_rate
+
+        return self.calculate_income() * tax_rate_2022 - self.calculate_nfz_deductible()

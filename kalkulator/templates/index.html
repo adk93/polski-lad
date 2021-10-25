@@ -210,13 +210,21 @@
                         {{ revenue_form.tax_rate.label(class="form-control-label") }} <a target="_blank" href="https://poradnikprzedsiebiorcy.pl/-ryczalt-od-przychodow-ewidencjonowanych-stawki" ><i class="far fa-question-circle"></i></a>
 
                         {{ revenue_form.tax_rate(class="form-control form-control-lg") }}
-
                     </div>
                     <div class="mb-3 form-check">
-
                         {{ revenue_form.zus(class="form-check-input") }}
 
                         {{ revenue_form.zus.label(class="form-check-label") }}
+                    </div>
+                    <div class="mb-3 form-check">
+                        {{ revenue_form.is_it(class="form-check-input", onClick="disableEnableMedicIT(this)") }}
+
+                        {{ revenue_form.is_it.label(class="form-check-label") }}
+                    </div>
+                    <div class="mb-3 form-check">
+                        {{ revenue_form.is_medic(class="form-check-input", onClick="disableEnableMedicIT(this)") }}
+
+                        {{ revenue_form.is_medic.label(class="form-check-label") }}
                     </div>
                 </fieldset>
                 <div class="form-group mb-3">
@@ -282,6 +290,10 @@
                     <li>Kwota wolna od podatku jest odliczana w całości w jednym okresie</li>
                     <li>Obliczenia podatku dochodowego uwzględniają ulgę dla klasy średniej przy umowie o pracę
                         oraz przy skali podatkowej na umowie B2B</li>
+                    <li>Przy rozliczaniu podatku ryczałtem od przychodów ewidencjonowanych zaznaczenie opcji
+                    'Świadczę usługi w obszarze IT' oznacza obniżenie stawki podatku w 2022 roku do 12% z 15% w 2021 roku.</li>
+                    <li>Przy rozliczaniu podatku ryczałtem od przychodów ewidencjonowanych zaznaczenie opcji
+                    'Świadczę usługi medyczne' oznacza obniżenie stawki podatku w 2022 roku do 17% z 14% w 2021 roku.</li>
                 </ul>
             </div>
         </div>

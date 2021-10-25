@@ -132,20 +132,29 @@ function calculate_b2b_revenue(a) {
         "grossSalary": f.querySelector("#gross_salary").value,
         "costs": f.querySelector("#costs").value,
         "taxRate": f.querySelector("#tax_rate").value,
-        "zus": f.querySelector("#zus").checked
+        "zus": f.querySelector("#zus").checked,
+        "is_it": f.querySelector("#is_it").checked,
+        "is_medic": f.querySelector("#is_medic").checked
     };
 
     printResults("B2B_REVENUE", server_data);
 };
 
-var fieldsToValdate = document.querySelectorAll("input[name='gross_salary'], input[name='costs']");
+var fieldsToValidate = document.querySelectorAll("input[name='gross_salary'], input[name='costs']");
 
-for (var i=0; i<fieldsToValdate.length; i++) {
-    fieldsToValdate[i].addEventListener("input", function() {
+for (var i=0; i<fieldsToValidate.length; i++) {
+    fieldsToValidate[i].addEventListener("input", function() {
         if (this.value < 0 || this.value == '' || (isNaN(this.value))) {
             this.classList.add("invalid");
         } else {
             this.classList.remove("invalid");
         }
     })
+}
+
+function disableEnableMedicIT(el) {
+    var elIds = document.querySelectorAll("#is_it, #is_medic");
+    for (var i=0, c; c = elIds[i]; i++) {
+        c.disabled =!(!el.checked || c === el);
+    }
 }

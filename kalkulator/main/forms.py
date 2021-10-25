@@ -34,3 +34,5 @@ class ContractB2BRevenueTax(SalaryForm, B2BForm):
                                                                    (0.055, '5.5%'),
                                                                    (0.03, '3%'),
                                                                    (0.02, '2%')])
+    is_it = BooleanField("Świadczę usługi w obszarze IT")
+    is_medic = BooleanField("Świadczę usługi medyczne")
