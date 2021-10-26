@@ -17,7 +17,7 @@ class B2BForm(FlaskForm):
 
 class ContractOfEmploymentForm(SalaryForm):
     gross_salary = FloatField("Miesięczne wynagrodzenie brutto", validators=[NumberRange(min=0), DataRequired()])
-    under_26 = BooleanField("ulga dla osób do 26. roku życia")
+    under_26 = BooleanField("Ulga dla osób do 26. roku życia")
 
 class ContractB2BFlatTax(SalaryForm, B2BForm):
     ipbox = BooleanField("IP Box")
