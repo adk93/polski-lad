@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b27900e0-968e-4122-8915-114ffad12127" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalkulator/templates/base.html" afterPath="$PROJECT_DIR$/kalkulator/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalkulator/templates/index.html" afterPath="$PROJECT_DIR$/kalkulator/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +40,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/kalkulator/templates/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+                <state relative-caret-position="369">
+                  <caret line="326" column="56" lean-forward="false" selection-start-line="326" selection-start-column="56" selection-end-line="326" selection-end-column="56" />
                   <folding />
                 </state>
               </provider>
@@ -59,7 +60,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kalkulator/templates/base.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="493">
@@ -134,6 +135,7 @@
       <find>form-group</find>
       <find>form-check</find>
       <find>fieldsToVa</find>
+      <find>POLS</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,9 +167,9 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/kalkulator/main/calcB2B.py" />
         <option value="$PROJECT_DIR$/kalkulator/static/js/main.js" />
-        <option value="$PROJECT_DIR$/kalkulator/templates/index.html" />
         <option value="$PROJECT_DIR$/kalkulator/main/forms.py" />
         <option value="$PROJECT_DIR$/kalkulator/templates/base.html" />
+        <option value="$PROJECT_DIR$/kalkulator/templates/index.html" />
       </list>
     </option>
   </component>
@@ -983,14 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kalkulator/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kalkulator/main/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1013,6 +1007,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="81" lean-forward="false" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kalkulator/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="326" column="56" lean-forward="false" selection-start-line="326" selection-start-column="56" selection-end-line="326" selection-end-column="56" />
           <folding />
         </state>
       </provider>
