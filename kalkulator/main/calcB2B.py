@@ -89,9 +89,9 @@ class B2Bscale2021(B2B):
         "SMALL_EMPLOYEE_ZUS": 265.78,
         "HEALTH_INSURANCE": 381.81,
         "HEALTH_INSURANCE_DEDUCTIBLE": 328.78,
-        "INCOME_TAX_TABLE": [Calculator.Tax_table(min_income=0, max_income=3000, tax_rate=0.00, previous_level_tax=0),
-                             Calculator.Tax_table(min_income=3000, max_income=85528, tax_rate=0.17, previous_level_tax=0),
-                             Calculator.Tax_table(min_income=85528, max_income=np.inf, tax_rate=0.32, previous_level_tax=14539.76)]
+        "INCOME_TAX_TABLE": [Calculator.Tax_table(min_income=0, max_income=3091, tax_rate=0.00, previous_level_tax=0),
+                             Calculator.Tax_table(min_income=3091, max_income=85528, tax_rate=0.17, previous_level_tax=0),
+                             Calculator.Tax_table(min_income=85528, max_income=np.inf, tax_rate=0.32, previous_level_tax=14014.29)]
     }
 
     @Rounder(decimals=2)
@@ -151,7 +151,7 @@ class B2Bscale2022(B2B):
         "HEALTH_INSURANCE_RATE_DEDUCTIBLE": 0,
         "INCOME_TAX_TABLE": [Calculator.Tax_table(min_income=0, max_income=30000, tax_rate=0.00, previous_level_tax=0),
                              Calculator.Tax_table(min_income=30000, max_income=120000, tax_rate=0.17, previous_level_tax=0),
-                             Calculator.Tax_table(min_income=120000, max_income=np.inf, tax_rate=0.32, previous_level_tax=20400)]
+                             Calculator.Tax_table(min_income=120000, max_income=np.inf, tax_rate=0.32, previous_level_tax=15300)]
     }
 
     @Rounder(decimals=2)

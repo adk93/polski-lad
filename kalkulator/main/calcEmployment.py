@@ -134,17 +134,17 @@ class ContractOfEmployment2021(ContractOfEmployment):
         "HEALTH_INSURANCE_RATE": 0.09,
         "HEALTH_INSURANCE_RATE_DEDUCTIBLE": 0.0775,
         "INCOME_TAX_TABLE": [Calculator.Tax_table(min_income=0,
-                                                  max_income=3000,
+                                                  max_income=3091,
                                                   tax_rate=0.00,
                                                   previous_level_tax=0),
-                             Calculator.Tax_table(min_income=3000,
+                             Calculator.Tax_table(min_income=3091,
                                                   max_income=85528,
                                                   tax_rate=0.17,
                                                   previous_level_tax=0),
                              Calculator.Tax_table(min_income=85528,
                                                   max_income=np.inf,
                                                   tax_rate=0.32,
-                                                  previous_level_tax=14539.76)]
+                                                  previous_level_tax=14014.29)]
     }
 
     def __init__(self, **kwargs):
@@ -166,7 +166,7 @@ class ContractOfEmployment2022(ContractOfEmployment):
         "HEALTH_INSURANCE_RATE_DEDUCTIBLE": 0.0,
         "INCOME_TAX_TABLE": [Calculator.Tax_table(min_income=0, max_income=30000, tax_rate=0.00, previous_level_tax=0),
                              Calculator.Tax_table(min_income=30000, max_income=120000, tax_rate=0.17, previous_level_tax=0),
-                             Calculator.Tax_table(min_income=120000, max_income=np.inf, tax_rate=0.32, previous_level_tax=20400)]
+                             Calculator.Tax_table(min_income=120000, max_income=np.inf, tax_rate=0.32, previous_level_tax=15300)]
     }
 
     def __init__(self, **kwargs):
